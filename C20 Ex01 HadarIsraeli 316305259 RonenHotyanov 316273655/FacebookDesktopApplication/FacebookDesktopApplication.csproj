@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{973E4CF6-1E37-4FA7-AC90-F7E695FA3CA3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FacebookDesktopApplication</RootNamespace>
+    <AssemblyName>FacebookDesktopApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook">
+      <HintPath>..\..\..\..\..\..\..\files\DLLs\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="FbGraphApiWrapper">
+      <HintPath>..\..\..\..\..\..\..\files\DLLs\FbGraphApiWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAlbumPictures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlbumPictures.designer.cs">
+      <DependentUpon>FormAlbumPictures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFindMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFindMatch.designer.cs">
+      <DependentUpon>FormFindMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOptimalTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOptimalTime.designer.cs">
+      <DependentUpon>FormOptimalTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPostStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPostStatus.designer.cs">
+      <DependentUpon>FormPostStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAlbumPictures.resx">
+      <DependentUpon>FormAlbumPictures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFindMatch.resx">
+      <DependentUpon>FormFindMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOptimalTime.resx">
+      <DependentUpon>FormOptimalTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPostStatus.resx">
+      <DependentUpon>FormPostStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FacebookSystemApplicationLogic\FacebookSystemApplicationLogic.csproj">
+      <Project>{57930204-24eb-4809-82dd-b8ff174fa91e}</Project>
+      <Name>FacebookSystemApplicationLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundBestTimeToShare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundFindAMatch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonFetchData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonFindAMatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonFindYourMatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonLogout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonNext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonOptimalTimePost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonPostStatus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonPostStatus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageFacebookLogoTitle.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

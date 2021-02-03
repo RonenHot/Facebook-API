@@ -1,5 +1,5 @@
 # Facebook-API
-A three phase project in a design patterns course that deals with the development of a side application for Facebook that offers two original new features. Practice work with the Facebook API. UML Practice Using diagrams : o Use-case diagram o Sequence diagram o Class diagram. Practice working with new features in the language C# 3.0
+A three phase project in a design patterns course that deals with the development of a side application for Facebook that offers two original new features. Practice working with the Facebook API. UML Practice Using diagrams : o Use-case diagram o Sequence diagram o Class diagram. Practice working with new features in the language C# 3.0
 
 The application gives the user a Facebook experience and in addition provides two new features:
 

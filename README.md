@@ -1,7 +1,7 @@
 # Facebook-API
 First project in a design patterns course that deals with the development of a side application for Facebook that offers two new features. Practice work with the Facebook API.   UML Practice Using diagrams : o Use-case diagram o Sequence diagram o Class diagram. Practice working with new features in the language C# 3.0
 
-The app gives the user a basic Facebook experience and in addition to the usage provider two new features:
+The application gives the user a Facebook experience and in addition to the usage provider two new features:
 
 1.A dating feature that allows the user to find friends who match his interests. The system allows the user to select preferences such as gender and age. The system checks with the user's friends if the friend is potential in terms of gender and age range, and if he / she is available for a relationship. (Relationship status can be as: open relationship, divorced, divorced, widowed, single).
 If the system finds such members, it displays them in a designed list for suitable potential members. The user can select a member from the list so the profile picture of the member will be displayed, according to the user's preferences.
